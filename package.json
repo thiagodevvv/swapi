@@ -1,0 +1,26 @@
+{
+  "name": "teste-itau",
+  "version": "1.0.0",
+  "description": "Api para consultar dados de Star Wars",
+  "main": "index.js",
+  "scripts": {
+    "test:cov": "nyc --reporter=lcov --all npm run test",
+    "test": "npx mocha --recursive --timeout 50000 --exit",
+    "test:dev": "npx mocha --recursive --timeout 50000 ./test --parallel -w",
+    "dev": "npx nodemon index.js"
+  },
+  "author": "Thiago Henrique da Silva Ferrari",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "ioredis": "^5.0.5"
+  }
+}
